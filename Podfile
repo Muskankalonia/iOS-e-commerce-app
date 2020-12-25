@@ -5,6 +5,7 @@ target 'shoppingApp' do
 
 pod 'Alamofire', '~> 4.0'
 pod "PromiseKit", "~> 6.0"
+pod 'TextFieldEffects'
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 

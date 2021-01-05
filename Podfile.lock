@@ -1,5 +1,15 @@
 PODS:
   - Alamofire (4.9.1)
+  - FBSDKCoreKit (8.2.0):
+    - FBSDKCoreKit/Basics (= 8.2.0)
+    - FBSDKCoreKit/Core (= 8.2.0)
+  - FBSDKCoreKit/Basics (8.2.0)
+  - FBSDKCoreKit/Core (8.2.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (8.2.0):
+    - FBSDKLoginKit/Login (= 8.2.0)
+  - FBSDKLoginKit/Login (8.2.0):
+    - FBSDKCoreKit (~> 8.2.0)
   - PromiseKit (6.13.1):
     - PromiseKit/CorePromise (= 6.13.1)
     - PromiseKit/Foundation (= 6.13.1)
@@ -13,20 +23,25 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - FBSDKLoginKit
   - PromiseKit (~> 6.0)
   - TextFieldEffects
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FBSDKCoreKit
+    - FBSDKLoginKit
     - PromiseKit
     - TextFieldEffects
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FBSDKCoreKit: 4afd6ff53d8133a433dbcda44451c9498f8c6ce4
+  FBSDKLoginKit: 7181765f2524d7ebf82d9629066c8e6caafc99d0
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 61f537d48f6c79b7f6176d01e445f1acaedc23d4
+PODFILE CHECKSUM: 7f39dcbed431087de0ac8c8f0c68d3aeb7c3fc06
 
 COCOAPODS: 1.8.4

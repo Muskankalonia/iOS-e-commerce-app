@@ -8,23 +8,28 @@
 import UIKit
 
 class CategoryVC: UIViewController {
-
+    
+     static var OrderNum = 0
+    
+    
  override func viewDidLoad() {
         super.viewDidLoad()
         
         
         
     }
+   
+    
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension CategoryVC: UICollectionViewDelegate {
+   func collectionView(_ collectionView: ProductCollection, didSelectItemAt indexPath: IndexPath){
+        guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
+       
+                present(detailVC, animated: true, completion: nil)
     }
-    */
+    
 
 }

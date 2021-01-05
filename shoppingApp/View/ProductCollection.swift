@@ -2,15 +2,15 @@
 //  ProductCollection.swift
 //  shoppingApp
 //
-//  Created by MUSKAN on 12/12/20.
+//  Created by MUSKAN on 20/12/20.
 //
 
 import UIKit
 
-class ProductCollection: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource {
+class ProductCollection: UICollectionView, UICollectionViewDelegate,UICollectionViewDataSource {
 
     override func awakeFromNib() {
-      
+        
         self.delegate = self
         self.dataSource = self
     }
@@ -27,4 +27,5 @@ class ProductCollection: UICollectionView, UICollectionViewDelegate, UICollectio
         return cell
     }
     
+
 }

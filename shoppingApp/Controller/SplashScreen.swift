@@ -30,9 +30,9 @@ class SplashScreen: UIViewController {
             response in
             if let json = response.data(using: .utf8){
                 let productCategories = try? JSONDecoder().decode(getProducts.self, from: json)
-                for product in (productCategories?.data.products)!{
-                    print(product.name)
-                }
+//                for product in (productCategories?.data.products)!{
+//                    print(product.name)
+//                }
             }
         }.catch { error in
             print(error)
